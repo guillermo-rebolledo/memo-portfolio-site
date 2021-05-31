@@ -1,7 +1,7 @@
 module.exports = {
-  pathPrefix: `/gatsby-starter-hyperspace/`, // This path is subpath of your hosting https://domain/portfolio
+  pathPrefix: `/about-me/`, // This path is subpath of your hosting https://domain/portfolio
   siteMetadata: {
-    title: 'Gatsby Starter Hyperspace',
+    title: 'Guillermo Rebolledo',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -15,6 +15,17 @@ module.exports = {
         theme_color: '#663399',
         display: 'standalone',
         icon: 'src/assets/img/website-icon.png', // This path is relative to the root of the site.
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `limelight\:300,400,400i,600,700`,
+          `source sans pro\:300,400,400i,600,700`,
+          `IBM Plex Mono\:300,400,400i,600,700`,
+        ],
+        display: 'swap',
       },
     },
     'gatsby-plugin-sass',

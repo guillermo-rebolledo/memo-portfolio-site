@@ -1,29 +1,32 @@
 import React from 'react';
-import { Link } from 'gatsby';
-
 import CapabilityList from './CapabilityList';
+import Scroll from '../common/Scroll';
 
-const Capabilities = () =>
-  <section id="two" className="wrapper style3 fade-up">
+const Capabilities = () => (
+  <section id="two" className="wrapper style3 fade-up fullscreen">
     <div className="inner">
-      <h2>What we do</h2>
+      <h2>How I Work</h2>
       <p>
-        Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam
-        turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus,
-        lacus eget hendrerit bibendum, urna est aliquam sem, sit amet
-        imperdiet est velit quis lorem.
+        My primary area of interest and my main area of expertise is frontend
+        and web technologies but I have experience working as a Fullstack
+        Engineer. I am a self-sufficient and independent engineer but I enjoy
+        working and collaborating with a team to build scalable, responsive, and
+        performant software.
       </p>
       <div className="features">
         <CapabilityList />
       </div>
       <ul className="actions">
         <li>
-          <Link className="button" to="/generic">
-            Learn more
-          </Link>
+          <Scroll type="id" element="three">
+            <a href="#three" className="button">
+              Get in touch
+            </a>
+          </Scroll>
         </li>
       </ul>
     </div>
   </section>
+);
 
 export default Capabilities;
